@@ -1,0 +1,323 @@
+/*Незарегестрированные пользователи*/
+.reg_left{
+  font-size: 1rem;
+  /*padding: 1rem;*/
+  margin-bottom: 0.5rem !important;
+  /*margin-left: 10px;*/
+  /*margin-right: 2px;*/
+    cursor: pointer;
+}
+.reg_right{
+  font-size: 1rem;
+  /*padding: 1rem;*/
+  margin-bottom: 0.5rem !important;
+  /*margin-left: 1px;*/
+  /*margin-right: 10px;*/
+    cursor: pointer;
+}
+.reg_left_top{
+    margin-top: 2rem !important;
+}
+.registr_h{
+  /*font-family: 'Merriweather';*/
+  font-weight: 700;
+    color: white;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.registr_visit_mark{
+    font-weight: 600;
+    color: white;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.a_password{
+    color: white ;
+    font-size: 15px;
+    font-weight: 300;
+    text-decoration: none;
+    font-style: italic;
+
+
+}
+
+.a_password:hover{
+     color: #cd9557;
+     font-size: 15px;
+     font-weight: 300;
+     text-decoration: underline ;
+     font-style: italic;
+ }
+/*.a_password:visited{*/
+    /*color: #cd9557;*/
+    /*font-size: 15px;*/
+    /*font-weight: 300;*/
+    /*text-decoration: none;*/
+    /*font-style: italic;*/
+/*}*/
+.btn_loginInputs{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 76%;
+    background-color: #cd9557 !important;
+    border-color: #cd9557 !important;
+
+}
+
+
+.btn_recovery{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-right: 8%;
+
+}
+
+.btn_red_visit{
+
+    margin-left: 74% !important;
+    margin-top: 10px !important;
+    margin-bottom: 35px !important;
+
+}
+
+.btn_save_timetable{
+    margin-top: 21%;
+    /*padding: 9px;*/
+    /*margin-bottom: 20px;*/
+   padding: .375rem .75rem;
+    /*margin-left: 80%;*/
+    background-color: #cd9557 !important;
+    border-color: #cd9557 !important;
+    font-size: 1rem;
+
+
+}
+.btn_save_visit_mark{
+    padding: .375rem .75rem;
+    margin-left:18%;
+    background-color: #cd9557 !important;
+    border-color: #cd9557 !important;
+    font-size: 1rem;
+    margin-top: 10%;
+
+}
+.btn_save_visit_mark_st{
+    margin-top: 22% !important;
+
+}
+.btn_search{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /*margin-left: 33%;*/
+    background-color: #cd9557 !important;
+    border-color: #cd9557 !important;
+
+}
+.search_user{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.btn_search_data{
+    margin-top: 25%;
+    padding: .375rem .75rem;
+    background-color: #cd9557 !important;
+    border-color: #cd9557 !important;
+    font-size: 1rem;
+}
+.btn_calendar{
+    margin-top:13%;
+    /*margin-bottom: 5px;*/
+    margin-left: 46%;
+    background-color: #cd9557 !important;
+    border-color: #cd9557 !important;
+}
+.btn_calendar_date{
+    margin-top:13%;
+    /*margin-bottom: 5px;*/
+    margin-left: 63%;
+    background-color: #cd9557 !important;
+    border-color: #cd9557 !important;
+}
+.apply_but{
+    background-color: #cd9557;
+}
+.a_close{
+    color: white;
+    margin-top: 5px;
+    margin-left: 95%;
+}
+
+.password_restoring{
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem !important;
+    margin-left: 1px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.pointer{
+    cursor: pointer;
+}
+
+/*Личный кабинет*/
+
+.menu_top{
+    /*background-color: rgba(0, 46, 102, 0.8) !important;*/
+    background-color: #002e66 !important;
+}
+.tables_box {
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 660px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+.search_group{
+    border-radius: 5px;
+    /*box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);*/
+    /*margin: 0 auto;*/
+    /*padding: 1rem;*/
+    cursor: pointer;
+}
+select>option{
+    color: black;
+}
+select{
+    color: #787878 !important;
+}
+
+.red-border{
+    border-color: #c83530 !important;
+    border: 2px solid;
+    border-radius: .25rem !important;
+}
+
+div.error {
+    color: white !important;
+    font-style: oblique;
+    font-weight: 100;
+}
+
+.label_reg{
+    color: white;
+   font-size: 1rem;
+}
+
+.shedule-weekday-cell {
+    /*background-color: #292929;*/
+    background-color: #cd9557;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    padding: 20px 0;
+    vertical-align: top;
+    /*font-family: 'Merriweather';*/
+}
+b{
+    /*font-family: open_sansbold;*/
+    font-size: 20px;
+    font-weight: 700;
+}
+.shedule-weekday-item {
+    margin: 12px 0;
+
+}
+.size_name_learn{
+    font-size: 16px;
+}
+.size_text_3col{
+    font-size: 14px;
+}
+dd{
+    line-height: 14px;
+}
+.color_td{
+    /*background-color: #e9ecef;*/
+    background-color: white;
+}
+.line_top{
+    border-top: none !important;
+}
+td{
+    padding: .2rem !important;
+}
+.time_learn{
+    font-size: 18px;
+    /*font-family: open_sanslight;*/
+    width: 200px;
+    padding-left: 50px !important;
+    padding-top: 30px !important;
+}
+.btn-secondary
+{
+    background-color: #cd9557 !important;
+    border-color: #cd9557 !important;
+    float: right;
+}
+.table_timetable{
+    padding-left: 20px;
+}
+.table_name{
+    /*font-family: open_sanscondbold;*/
+    font-size: 30px;
+    padding-left: 20px;
+    font-weight:600;
+}
+.table_date{
+    /*font-family: open_sanscondbold;*/
+    font-size: 20px;
+    padding-left: 20px;
+    font-weight:600;
+}
+
+.input_add_data {
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    max-width: 660px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+.sel_delete{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.btn_save_data{
+    margin-top: 5px;
+    float: right;
+    margin-bottom: 5px;
+    /*margin-left: 76%;*/
+
+    background-color: #cd9557 !important;
+    border-color: #cd9557 !important;
+
+}
+.text_label{
+    font-size: 1rem;
+    color: #1a1a1a;
+}
+.img_red{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+    cursor: pointer;
+}
+/*.dropdown-menu{*/
+    /*margin-left: -205%;*/
+/*}*/
