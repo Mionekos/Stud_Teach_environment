@@ -21,6 +21,7 @@
 <!-- Custom styles for this template-->
     <link href="{{ asset("new/css/sb-admin.css")}}" rel="stylesheet">
     <link href="{{ asset("new/css/Students.css")}}" rel="stylesheet">
+    <script src="{{ asset("js/visitMarkForStudents.js")}}"></script>
 
 
 
@@ -96,17 +97,10 @@
                         <label>Выбрать период дат:</label>
                         <input type="text" id="daterange" class="form-control search_group" name="daterange" value="" />
                     </div>
-                    <div class="col-md-2" style="display: none">
+                    <div class="col-md-2">
                         <label>Предмет:</label>
-
-                        <select class="custom-select" id="basic" multiple="multiple">
-                            <option value="1">Математика</option>
-                            <option value="2">Программирование</option>
-                            <option value="3">Русский</option>
-                            <option value="4">ФВ</option>
+                        <select id="subject" name="subject" class="form-control" >
                         </select>
-
-
                     </div>
 
                     <div class="col-md-2">

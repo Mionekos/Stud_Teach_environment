@@ -64,6 +64,7 @@ Route::get('/group_timetable','TimetableController@getGroupTimetable')->name('gr
 Route::get('/timetable_for_students','TimetableController@showTimetableForStudents')->name('showTimetableStudents');
 Route::get('/teacher_visit_mark','VisitMarkController@showTableVisitMarkForTeacher')->name('visitMarkTeacher');
 Route::get('/student_visit_mark','VisitMarkController@showTableVisitMarkForStudents')->name('visitMarkStudent');
+Route::get('/subject_visit_mark','VisitMarkController@getSubjectForVisitMarkStudents')->name('subjectVisitMark');
 Route::get('/teachers','TimetableController@getTeacherForTimetableTeacher')->name('teachers');
 
 Route::get('/add_role','AdminController@add_role')->name('addRole');

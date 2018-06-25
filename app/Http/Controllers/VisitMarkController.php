@@ -21,7 +21,7 @@ use DatePeriod;
 
 class VisitMarkController extends BaseController
 {
-    public function subject(Request $request){
+    public function getSubjectForVisitMarkStudents(Request $request){
         $subjects = Subjects::all();
         return response()->json($subjects);
     }
@@ -34,7 +34,7 @@ class VisitMarkController extends BaseController
     public function showTableVisitMarkForStudents(Request $request){
 
         $visitMarkForStudent = DB::select('SELECT `date`,`id_time`, `name_subject`, `options`,`mark` 
-                                        FROM attendance
+                                            FROM attendance
                                         INNER JOIN `timetable`ON timetable.id_timetable=attendance.timetable_id
                                         INNER JOIN `time` ON time.id_time=timetable.time_id
                                         INNER JOIN `pairs` ON pairs.id_pairs=timetable.pairs_id
