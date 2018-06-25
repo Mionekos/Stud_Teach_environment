@@ -63,6 +63,7 @@ Route::get('/update', 'UserController@changeUserInfo')->name("update");
 Route::get('/group_timetable','TimetableController@getGroupTimetable')->name('groupTimetable');
 Route::get('/timetable_for_students','TimetableController@showTimetableForStudents')->name('showTimetableStudents');
 Route::get('/teacher_visit_mark','VisitMarkController@showTableVisitMarkForTeacher')->name('visitMarkTeacher');
+Route::get('/student_visit_mark','VisitMarkController@showTableVisitMarkForStudents')->name('visitMarkStudent');
 Route::get('/teachers','TimetableController@getTeacherForTimetableTeacher')->name('teachers');
 
 Route::get('/add_role','AdminController@add_role')->name('addRole');
