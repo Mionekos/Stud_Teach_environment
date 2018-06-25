@@ -10,7 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('test', function (){
+    return view('test');
+});
+Route::get('/table', 'TestController@test')->name("test");
 Route::get('/', function () {
     return view('start_page');
 });
