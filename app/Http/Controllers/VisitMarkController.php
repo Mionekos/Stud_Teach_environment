@@ -33,6 +33,11 @@ class VisitMarkController extends BaseController
     }
     public function showTableVisitMarkForStudents(Request $request){
 
+        $tableVisitMark = $request->all();
+        //$date_f =new \DateTime(date('Y-m-d',strtotime($tableVisitMark['daterangepicker_start'])));
+        //$date_s = new \DateTime(date('Y-m-d',strtotime('+1 day', strtotime($tableVisitMark['daterangepicker_end']))));
+       // $subject_select = $tableVisitMark['subject'];
+
         $visitMarkForStudent = DB::select('SELECT `date`,`id_time`, `name_subject`, `options`,`mark` 
                                             FROM attendance
                                         INNER JOIN `timetable`ON timetable.id_timetable=attendance.timetable_id
