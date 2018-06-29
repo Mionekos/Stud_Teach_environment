@@ -47,15 +47,21 @@ function getVisitMarkForStudent() {
             // cols.push({mData:data.data[0]['name_subject']})
             // cols.push({mData:data.data[0]['options']})
             // cols.push({mData:data.data[0]['mark']})
-            $('#example').dataTable({
-                // "data": function (d) {
-                //     d.subject = $("#subject").val();
-                // },
-                destroy: true,
-                "bProcessing": true,
-                "sAjaxSource": "student_visit_mark",
-                "aoColumns": [
 
+            var dataTable = $('#example').dataTable({
+                processing: true,
+                serverSide: true,
+                "ajax": {
+                    "url": "student_visit_mark",
+                    "type": "GET",
+                    "data": function (data) {
+                        data.name_subject = $("#subject").val();
+                        data.daterangepicker_start = $("input[name='daterangepicker_start']").val();
+                        data.daterangepicker_end = $("input[name='daterangepicker_end']").val();
+                    },
+                },
+                destroy: true,
+                "aoColumns": [
                     {mData: 'date'},
                     {mData: 'id_time'},
                     {mData: 'name_subject'},

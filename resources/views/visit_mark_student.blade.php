@@ -15,19 +15,11 @@
     <link href="{{ asset("new/vendor1/font-awesome/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css">
     <!-- Page level plugin CSS-->
     <link href="{{ asset("new/vendor1/datatables/dataTables.bootstrap4.css")}}" rel="stylesheet">
-    {{--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />--}}
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
-    {{--<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.min.css" rel="stylesheet">--}}
 <!-- Custom styles for this template-->
     <link href="{{ asset("new/css/sb-admin.css")}}" rel="stylesheet">
     <link href="{{ asset("new/css/Students.css")}}" rel="stylesheet">
     <script src="{{ asset("js/visitMarkForStudents.js")}}"></script>
-
-
-
-    {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.15/css/bootstrap-multiselect.css"/>--}}
-    {{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">--}}
-
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
@@ -99,12 +91,12 @@
                     </div>
                     <div class="col-md-2">
                         <label>Предмет:</label>
-                        <select id="subject" name="subject" class="form-control" >
+                        <select id="subject" name="subject_name" class="form-control" >
                         </select>
                     </div>
 
                     <div class="col-md-2">
-                        <button type="button" id="btn_visit_mark" class="btn btn-secondary btn_save_visit_mark btn_save_visit_mark_st" style="float: left">Применить</button>
+                        <button type="button" id="btn_visit_mark" class="btn btn-secondary btn_save_visit_mark btn_save_visit_mark_st" style="float: left" onclick="getVisitMarkForStudent()">Применить</button>
                     </div>
                     <div class="col-md-5"></div>
                 </div>
@@ -163,13 +155,13 @@
     <script src="{{ asset("new/js/sb-admin.min.js")}}"></script>
     <!-- Custom scripts for this page-->
     <script src="{{ asset("new/js/sb-admin-datatables.min.js")}}"></script>
-    <script src="{{ asset("new/js/timetable.js")}}"></script>
+    {{--<script src="{{ asset("new/js/timetable.js")}}"></script>--}}
     <script src="{{ asset("new/js/sb-admin-charts.min.js")}}"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
     {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>--}}
     <script src="{{ asset("new/js/bootstrap-multiselect.js")}}"></script>
-    <script src="{{ asset("new/js/visit_mark_student.js")}}"></script>
+    {{--<script src="{{ asset("new/js/visit_mark_student.js")}}"></script>--}}
 
     <script type="text/javascript">
         $(function() {

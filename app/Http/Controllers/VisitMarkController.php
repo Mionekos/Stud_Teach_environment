@@ -36,7 +36,7 @@ class VisitMarkController extends BaseController
         $tableVisitMark = $request->all();
         //$date_f =new \DateTime(date('Y-m-d',strtotime($tableVisitMark['daterangepicker_start'])));
         //$date_s = new \DateTime(date('Y-m-d',strtotime('+1 day', strtotime($tableVisitMark['daterangepicker_end']))));
-       // $subject_select = $tableVisitMark['subject'];
+       $subject_select = $tableVisitMark['name_subject'];
 
         $visitMarkForStudent = DB::select('SELECT `date`,`id_time`, `name_subject`, `options`,`mark` 
                                             FROM attendance
@@ -44,7 +44,8 @@ class VisitMarkController extends BaseController
                                         INNER JOIN `time` ON time.id_time=timetable.time_id
                                         INNER JOIN `pairs` ON pairs.id_pairs=timetable.pairs_id
                                         INNER JOIN `subjects` ON subjects.id_subjects=pairs.subjects_id
-                                        INNER JOIN `visits` ON visits.id_visits=attendance.visits_id');
+                                        INNER JOIN `visits` ON visits.id_visits=attendance.visits_id
+                                        WHERE pairs.subjects_id='.$subject_select);
         $res = array(
             "draw" => 1,
             "recordsTotal" => count($visitMarkForStudent),
