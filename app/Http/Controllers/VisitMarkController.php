@@ -34,9 +34,9 @@ class VisitMarkController extends BaseController
     public function showTableVisitMarkForStudents(Request $request){
 
         $tableVisitMark = $request->all();
-        //$date_f =new \DateTime(date('Y-m-d',strtotime($tableVisitMark['daterangepicker_start'])));
-        //$date_s = new \DateTime(date('Y-m-d',strtotime('+1 day', strtotime($tableVisitMark['daterangepicker_end']))));
-       $subject_select = $tableVisitMark['name_subject'];
+        $date_f =date('Y-m-d',strtotime($tableVisitMark['daterangepicker_start']));
+        $date_s = date('Y-m-d',strtotime('+1 day', strtotime($tableVisitMark['daterangepicker_end'])));
+        $subject_select = $tableVisitMark['name_subject'];
 
         $visitMarkForStudent = DB::select('SELECT `date`,`id_time`, `name_subject`, `options`,`mark` 
                                             FROM attendance
@@ -45,7 +45,8 @@ class VisitMarkController extends BaseController
                                         INNER JOIN `pairs` ON pairs.id_pairs=timetable.pairs_id
                                         INNER JOIN `subjects` ON subjects.id_subjects=pairs.subjects_id
                                         INNER JOIN `visits` ON visits.id_visits=attendance.visits_id
-                                        WHERE pairs.subjects_id='.$subject_select);
+                                        WHERE pairs.subjects_id='.$subject_select.'
+                                        AND DATE(attendance.date) BETWEEN'.'"'.$date_f.'"'.'AND'.'"'.$date_s.'"');
         $res = array(
             "draw" => 1,
             "recordsTotal" => count($visitMarkForStudent),
